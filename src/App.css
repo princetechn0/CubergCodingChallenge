@@ -2,37 +2,76 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.outer {
+  border: 5px solid black;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.innerRow {
   display: flex;
-  flex-direction: column;
+  padding: 30px;
+  gap: 100px;
+}
+
+.resetList {
+  padding: 10px;
+  margin: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 30px;
+}
+
+.controls {
+  display: grid;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+}
+.controls button {
+  padding: 10px;
+  margin: 10px;
+  display: block;
+}
+
+select {
+  padding: 10px;
+  font-size: 15px;
+}
+.selectListBox {
+  border: 3px solid black;
+  padding-bottom: 30px;
+  width: 200px;
+}
+
+.selectListBox option:checked {
   color: white;
+  background-color: red;
 }
 
-.App-link {
-  color: #61dafb;
+tr,
+th,
+td {
+  border: 1px solid;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.outputTable tr th:nth-child(n) {
+  width: 10%;
+  background-color: aquamarine;
+  height: 30px;
+}
+
+.outputTable tr:nth-child(even) {
+  background-color: pink;
+}
+
+.outputTable {
+  table-layout: fixed;
+  /* width: 95%; */
+  border-collapse: collapse;
+  border: 3px solid black;
+  color: black;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
 }
